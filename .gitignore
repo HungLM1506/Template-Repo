@@ -1,0 +1,8 @@
+# pickle files
+*.npy
+*.pkl
+
+# cache directory
+*/.cache/
+
+
