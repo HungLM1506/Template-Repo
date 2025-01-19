@@ -12,11 +12,18 @@ license = { file = "LICENSE.md" }
 authors = [{ name = "HungLM", email = "leminhhung933@gmail.com" }]
 dependencies = []
 
-[project.scripts]
-cli = "pyproject.cli:main"
+# [project.scripts]
+# cli = "pyproject.cli:main"
+
+[tool.hatch.build]
+sources = ["src"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/eagle"]
 
 [tool.hatch.version]
-path = "src/pyproject/__init__.py"
+path = "src/eagle/__init__.py"
+
 
 [tool.uv.sources]
 torch = [{ index = "pytorch-cu124", marker = "platform_system != 'Darwin'" }]
