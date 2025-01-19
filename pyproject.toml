@@ -53,6 +53,7 @@ all = [
   { include-group = 'type-checking' },
 ]
 
+# mypy là một công cụ kiểm tra kiểu tĩnh cho Python, giúp phát hiện các lỗi liên quan đến kiểu dữ liệu trước khi chạy chương trình 
 [tool.mypy]
 mypy_path = "src"
 python_version = "3.12"
@@ -112,6 +113,7 @@ init_typed = true
 warn_required_dynamic_aliases = true
 warn_untyped_fields = true
 
+# pytest là một framework kiểm thử mạnh mẽ cho Python. Để cấu hình pytest, bạn có thể thêm
 [tool.pytest.ini_options]
 addopts = [
   # general
