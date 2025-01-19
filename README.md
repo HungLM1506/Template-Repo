@@ -19,3 +19,13 @@ Trong file `pyproject.toml` có 3 thành phần chính
     - `[tool]` chứa các bảng con cụ thể cho từng công cụ, ví dụ, `[tool.hatch]`, `[tool.black]`, `[tool.mypy]`, v.v . Nội dung của bảng này được định nghĩa bởi từng công cụ cụ thể. Hãy tham khảo tài liệu của công cụ cụ thể để biết những gì nó có thể chứa.
 
 ## 2. `uv.lock`
+Tệp `uv.lock` là một phần quan trọng trong hệ thống quản lý phụ thuộc của công cụ uv, được thiết kế để khóa các phiên bản phụ thuộc của dự án Python, đảm bảo tính nhất quán và khả năng tái tạo môi trường trên nhiều nền tảng khác nhau.
+
+### 2.1 Chức năng chính
+
+***Khóa Phiên bản Phụ thuộc***: Tệp uv.lock ghi lại các phiên bản chính xác của các gói phụ thuộc được sử dụng trong dự án, giúp đảm bảo rằng môi trường phát triển và sản xuất đều sử dụng cùng một phiên bản, tránh các vấn đề không tương thích. 
+
+
+***Hỗ Trợ Đa Nền Tảng***: Khác với tệp requirements.txt, uv.lock hỗ trợ khóa phụ thuộc cho nhiều nền tảng khác nhau, cho phép tạo ra các môi trường nhất quán trên các hệ điều hành khác nhau. 
+
+
